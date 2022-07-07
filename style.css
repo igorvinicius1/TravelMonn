@@ -1,0 +1,172 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body
+{
+    background-color: rgb(19, 18, 18);
+    color: white;
+    font-family: 'Space Mono', monospace;
+    max-width: 1200px;
+    margin: 0 auto; /*fica tdo no meio*/
+    padding: 15px;
+}
+
+header
+{
+    display: flex; /* dfine q o cabeçalho será um flex box, mais facil de manipular */
+    flex-direction: row; /* fica tudo uma linha */
+    justify-content: space-between; /*espaço ente a div e a ul*/
+    align-items: center; /*nivelou a div e a ul na memsma linha ---*/
+}
+
+
+li
+{
+    display: inline-block;
+    margin: 20px;
+}
+
+h1
+{
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+h2
+{
+    font-size: 55px;
+    line-height: 45px;
+    font-weight: bolder;
+}
+
+p
+{
+    padding-top: 25px;
+    line-height: 22px;
+    max-width: 600px;
+    margin-right: 150px;
+}
+
+a
+{
+    color: gainsboro;
+    text-decoration: none;
+}
+
+a:hover/*quando passar o mouse sobre*/
+{
+    color: blu;
+    transition: 0.4s all;
+}
+
+#papa
+{
+    border: 2px solid aqua;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+#papa:hover
+{
+    background-color: aqua;
+    color: black;
+}
+
+.zulu
+{
+    color: aqua;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+img
+{
+    width: 350px;
+    border-radius: 190px;
+    margin-top: 50px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    width: 63%; /*pegou 70% do tamanho da div em que ela se encontra ou seja os input dentro da aside*/
+}
+
+form [type="submit"]
+{
+    height: 50px;
+    width: 60%;
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;/*serve só para o mouse aparecer a mãozinha*/
+}
+
+input
+{
+    margin-top: 20px;
+    height: 20px; /*dando uma altura maior no input */
+    padding: 20px;
+    border-radius: 35px;
+}
+
+@media screen and (max-width: 700px) /*quando a largura ser menor que 700px a tela vai se adaptar as necessidades estabelecidas*/
+{
+    header
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main
+    {
+        flex-direction: column;
+    }
+
+    h2
+    {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    p
+    {
+        margin: 0 auto;
+    }
+
+
+    form
+    {
+        margin: 0 auto;
+        width: 100%; /*ocupa 100% da largura da div q se encontra*/
+    }
+
+    input
+    {
+        align-self: center;
+        width: 70%;
+    }
+
+    article
+    {
+        align-self: center;
+        margin-right: 150px;
+    }
+
+    img
+    {
+        width: 200px;
+        margin-left: 150px;
+        margin-top: 40px;
+    }
+}
