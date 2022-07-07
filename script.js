@@ -9,7 +9,7 @@ const saida = document.querySelector(".india"); //variavel de saída que vai apa
                 saida.textContent += texto.charAt(contador); //imprime a primeira letra da frase
                 contador++; //imprementa contador para ir para próxima letra
                 digitacao(texto,contador);//chama a função novamente para imprimir as proximas letras
-            }, 140)//tempo
+            }, 90)//tempo
         }
     }
 
