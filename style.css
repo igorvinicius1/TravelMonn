@@ -59,16 +59,24 @@ a
 
 a:hover/*quando passar o mouse sobre*/
 {
-    color: blu;
+    color: gainsboro;
     transition: 0.4s all;
 }
 
-#papa
+#papa, #tango
 {
     border: 2px solid aqua;
     padding: 10px;
     border-radius: 18px;
 }
+
+/* #tango
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+} */
 
 #papa:hover
 {
@@ -119,6 +127,7 @@ input
     padding: 20px;
     border-radius: 35px;
 }
+
 
 @media screen and (max-width: 700px) /*quando a largura ser menor que 700px a tela vai se adaptar as necessidades estabelecidas*/
 {
