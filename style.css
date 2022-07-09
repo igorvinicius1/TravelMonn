@@ -70,13 +70,14 @@ a:hover/*quando passar o mouse sobre*/
     border-radius: 18px;
 }
 
-/* #tango
+#tango
 {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     margin-top: 50px;
-} */
+    display: none;
+}
 
 #papa:hover
 {
