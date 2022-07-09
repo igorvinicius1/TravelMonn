@@ -23,7 +23,6 @@ header
     align-items: center; /*nivelou a div e a ul na memsma linha ---*/
 }
 
-
 li
 {
     display: inline-block;
