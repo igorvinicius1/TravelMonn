@@ -54,6 +54,7 @@ a
 {
     color: gainsboro;
     text-decoration: none;
+    transition: 0.6s;
 }
 
 a:hover/*quando passar o mouse sobre*/
@@ -101,13 +102,21 @@ img
     width: 350px;
     border-radius: 190px;
     margin-top: 50px;
+    transition: width 1s; /*soft hover*/
+    transition-delay: 0.4s;
+}
+
+img:hover
+{
+    width: 385px;
+    border-radius: 220px;
 }
 
 form
 {
     display: flex;
     flex-direction: column;
-    width: 63%; /*pegou 70% do tamanho da div em que ela se encontra ou seja os input dentro da aside*/
+    width: 63%; /*pegou 63% do tamanho da div em que ela se encontra ou seja os input dentro da aside*/
 }
 
 form [type="submit"]
@@ -177,5 +186,10 @@ input
         width: 200px;
         margin-left: 150px;
         margin-top: 40px;
+    }
+
+    img:hover
+    {
+        width: 210px;
     }
 }
