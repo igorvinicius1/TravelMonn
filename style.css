@@ -106,6 +106,7 @@ img
     transition-delay: 0.4s;
 }
 
+
 img:hover
 {
     width: 385px;
@@ -135,61 +136,4 @@ input
     height: 20px; /*dando uma altura maior no input */
     padding: 20px;
     border-radius: 35px;
-}
-
-
-@media screen and (max-width: 700px) /*quando a largura ser menor que 700px a tela vai se adaptar as necessidades estabelecidas*/
-{
-    header
-    {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    main
-    {
-        flex-direction: column;
-    }
-
-    h2
-    {
-        font-size: 50px;
-        text-align: center;
-    }
-
-    p
-    {
-        margin: 0 auto;
-    }
-
-
-    form
-    {
-        margin: 0 auto;
-        width: 100%; /*ocupa 100% da largura da div q se encontra*/
-    }
-
-    input
-    {
-        align-self: center;
-        width: 70%;
-    }
-
-    article
-    {
-        align-self: center;
-        margin-right: 150px;
-    }
-
-    img
-    {
-        width: 200px;
-        margin-left: 150px;
-        margin-top: 40px;
-    }
-
-    img:hover
-    {
-        width: 210px;
-    }
 }
